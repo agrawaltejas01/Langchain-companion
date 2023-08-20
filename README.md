@@ -1,4 +1,4 @@
-## [Deeplearning.Ai](https://learn.deeplearning.ai/langchain/) - Andrew Ng, Harrison Chase
+## [Deeplearning.Ai - Langchain](https://learn.deeplearning.ai/langchain/) - Andrew Ng, Harrison Chase
 
 ## [Langchain Docs](https://python.langchain.com/docs/get_started/introduction.html)
 
@@ -43,4 +43,4 @@
   - In that application of yours, you cant read human strings returned by Template messages always.
   - Output parser provided by Langchain will help you put it in parsable formats like JSON, List, Enums, etc
 
-### [Check out Complete module](openAi/prompt_template.py)
+- ### [Check out Complete module](openAi/prompt_template.py)
