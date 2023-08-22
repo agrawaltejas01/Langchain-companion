@@ -2,6 +2,11 @@
 
 ## [Langchain Docs](https://python.langchain.com/docs/get_started/introduction.html)
 
+- ### What does it do?
+  - A model that takes a sentence as input breaks the word into token, makes it a list and
+  - returns a sentence (sequence of words ) that has the best probability of relevance
+  - Now this input can be textual or any media depending on model
+
 ## Models
 
 - ### [Doc](https://python.langchain.com/docs/modules/model_io/models/llms/)
@@ -44,6 +49,13 @@
   - Output parser provided by Langchain will help you put it in parsable formats like JSON, List, Enums, etc
 
 - ### [Check out Complete module](openAi/prompt_template.py)
+
+## Pricing of Open AI
+
+- Ok, OpenAI has built a great model.
+- They charge on a per token basis. [What is token and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
+  - [Remember how it works?](https://github.com/agrawaltejas01/Langchain-companion#what-does-it-do)
+- ## Essentially they have built a model
 
 ## Memory
 
