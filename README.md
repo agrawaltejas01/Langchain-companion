@@ -44,3 +44,12 @@
   - Output parser provided by Langchain will help you put it in parsable formats like JSON, List, Enums, etc
 
 - ### [Check out Complete module](openAi/prompt_template.py)
+
+## Memory
+
+- ### [Doc](https://python.langchain.com/docs/modules/memory/)
+
+- More context these models are.
+- These models are use and throw. They dont remember anything
+- So you have to send a long message to them so they can answer more correctly and relevant answer.
+- :euro: Most models charge on per token basis. Not just input, but output :cold_sweat:
