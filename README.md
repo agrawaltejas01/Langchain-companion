@@ -52,4 +52,9 @@
 - More context these models are.
 - These models are use and throw. They dont remember anything
 - So you have to send a long message to them so they can answer more correctly and relevant answer.
-- :euro: Most models charge on per token basis. Not just input, but output :cold_sweat:
+- **:euro:** Most models charge on per token basis. Not just input, but output **:cold_sweat:**
+- Nope, there is no way, !! [See for yourself](https://cdn.sanity.io/images/vr8gru94/production/927ca8cc5d92ee75f36d7eb4bef4685c4e3118e5-2880x1370.png) (Great idea, you anti FOSS MBAs). They say are trying this in GPT-4, lets see.
+
+- Alright,
+- Now we have to manage the memory on our own. How do we do that?
+- ## [I do it here](openAi/Memory/README.md)
