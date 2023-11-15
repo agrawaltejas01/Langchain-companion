@@ -52,16 +52,15 @@
 
 ## Pricing of Open AI
 
-- Ok, OpenAI has built a great model.
+- Ok, OpenAI has built a great model. Why is it so costly?
 - They charge on a per token basis. [What is token and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
   - [Remember how it works?](https://github.com/agrawaltejas01/Langchain-companion#what-does-it-do)
-- ## Essentially they have built a model
 
 ## Memory
 
 - ### [Doc](https://python.langchain.com/docs/modules/memory/)
 
-- More context these models are.
+- More the context these models are accurate. Context ∝ Accuracy
 - These models are use and throw. They dont remember anything
 - So you have to send a long message to them so they can answer more correctly and relevant answer.
 - **:euro:** Most models charge on per token basis. Not just input, but output **:cold_sweat:**

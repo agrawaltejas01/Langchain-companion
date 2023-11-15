@@ -1,6 +1,10 @@
 from openAi.completions import run_get_completion
 from openAi.prompt_template import run_prompt_template
 
+from openAi.Memory.conversation_buffer import conversationBufferMemory, conversationBufferWindowMemory
+from openAi.Memory.conversation_summary import conversationSummaryMemory
+
+
 doc_string = """Flow \
     Mandate Creation \
     Separate from debit trigger \
@@ -26,4 +30,11 @@ doc_string = """Flow \
 # Output Parser
 # Use a more machine readable formats
 # Like JSON, Enums, List, etc
-run_prompt_template()
+# run_prompt_template()
+
+# Memory
+''' 1. conversation_buffer'''
+# conversationBufferMemory()
+conversationBufferWindowMemory()
+
+# conversationSummaryMemory()
