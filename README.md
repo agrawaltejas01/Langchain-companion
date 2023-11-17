@@ -64,8 +64,23 @@
 - These models are use and throw. They dont remember anything
 - So you have to send a long message to them so they can answer more correctly and relevant answer.
 - **:euro:** Most models charge on per token basis. Not just input, but output **:cold_sweat:**
-- Nope, there is no way, !! [See for yourself](https://cdn.sanity.io/images/vr8gru94/production/927ca8cc5d92ee75f36d7eb4bef4685c4e3118e5-2880x1370.png) (Great idea, you anti FOSS MBAs). They say are trying this in GPT-4, lets see.
+- Nope, there is no way, !! [See for yourself](https://cdn.sanity.io/images/vr8gru94/production/927ca8cc5d92ee75f36d7eb4bef4685c4e3118e5-2880x1370.png) (Great idea, you anti FOSS MBAs). They say, they are trying this in GPT-4, lets see.
 
 - Alright,
 - Now we have to manage the memory on our own. How do we do that?
-- ## [I do it here](openAi/Memory/README.md)
+- ### [I do it here](openAi/Memory/README.md)
+
+## Chains
+
+- While doing real world tasks, we will require to have a complex system which deals with multiple prompts to get the required result
+- To do this, Langchain provides a simple architecture called chains.
+- Chain is a composition of different components. These components can be
+  - prompts
+  - Output parsers
+  - A chain itself
+  - Etc
+- Example
+  - Trading Bot Chain
+  - Data Collection -> Text Processing -> Sentiment Analysis -> Prompt Selector -> Trend Detection -> Language Model -> Trading Decision
+- Method used in the video is different that the code, because at the time of writing, Langchain has introduced a new way of building and dealing with chains called LCEL (LangChain Expression Language).
+- ### [I do it here](openAi/Chains/README.md)
