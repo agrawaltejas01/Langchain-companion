@@ -3,7 +3,8 @@ from openAi.prompt_template import run_prompt_template
 
 from openAi.Memory.conversation_buffer import conversationBufferMemory, conversationBufferWindowMemory
 from openAi.Memory.conversation_summary import conversationSummaryMemory
-
+from openAi.Chains.building_chain import basicChain
+from openAi.Chains.simple_sequential import simpleSequentialChain
 
 doc_string = """Flow \
     Mandate Creation \
@@ -35,6 +36,11 @@ doc_string = """Flow \
 # Memory
 ''' 1. conversation_buffer'''
 # conversationBufferMemory()
-conversationBufferWindowMemory()
-
+# conversationBufferWindowMemory()
 # conversationSummaryMemory()
+
+# Chains
+'''1.  Basic Chain Building '''
+# basicChain()
+'''2. Simple sequential Chain'''
+simpleSequentialChain()

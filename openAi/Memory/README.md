@@ -43,3 +43,17 @@ Save all the answers and send it as history in next prompt
 ### Comparison
 
 ![plot](./Conversation-Buffer-Summary-With-and-without-token.png)
+
+### Additional Types
+
+1. #### Entity
+
+- Entity memory remembers given facts about specific entities in a conversation. It extracts information on entities (using an LLM) and builds up its knowledge about that entity over time (also using an LLM).
+
+2. #### Backed by a Vector Store
+
+- VectorStoreRetrieverMemory stores memories in a vector store and queries the top-K most "salient" docs every time it is called.
+
+- This differs from most of the other Memory classes in that it doesn't explicitly track the order of interactions.
+
+- In this case, the "docs" are previous conversation snippets. This can be useful to refer to relevant pieces of information that the AI was told earlier in the conversation.
