@@ -62,8 +62,7 @@ def routerChain(model="gpt-3.5-turbo"):
     chain = {
         "emotion": input_chain,
         # "emotion": lambda x: x["emotion"]
-    }
-    # | RunnableLambda(route)
+    } | RunnableLambda(route)
 
     output = chain.invoke({"text": "What is this chain in langchain?"})
     print(output)

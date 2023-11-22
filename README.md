@@ -85,5 +85,8 @@
 - Method used in the video is different that the code, because at the time of writing, Langchain has introduced a new way of building and dealing with chains called LCEL (LangChain Expression Language).
 - ### [I do it here](openAi/Chains/README.md)
 
+## Retrieval
 
-<!--  -->
+- Many LLM applications require user-specific data that is not part of the model's training set.
+- The primary way of accomplishing this is through Retrieval Augmented Generation (RAG).
+- ### [I do it here](openAi/Retrieval/README.md)
