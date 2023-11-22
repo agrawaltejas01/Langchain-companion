@@ -5,6 +5,7 @@ from openAi.Memory.conversation_buffer import conversationBufferMemory, conversa
 from openAi.Memory.conversation_summary import conversationSummaryMemory
 from openAi.Chains.building_chain import basicChain
 from openAi.Chains.simple_sequential import simpleSequentialChain
+from openAi.Chains.router import routerChain
 
 doc_string = """Flow \
     Mandate Creation \
@@ -44,3 +45,5 @@ doc_string = """Flow \
 # basicChain()
 '''2. Simple sequential Chain'''
 simpleSequentialChain()
+'''3. Router Chain'''
+routerChain()

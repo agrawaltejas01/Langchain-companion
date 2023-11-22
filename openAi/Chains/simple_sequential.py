@@ -5,6 +5,7 @@ import openai
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import StrOutputParser
+from langchain.schema.runnable import RunnablePassthrough
 
 
 def simpleSequentialChain(model="gpt-3.5-turbo"):
@@ -29,19 +30,23 @@ def simpleSequentialChain(model="gpt-3.5-turbo"):
     langchain.prompts.chat.BaseChatPromptTemplate.format_prompt() argument after ** must be a mapping, not ChatPromptValue
     '''
 
-    chain = (
-        {"emotion": prompt1 | llm | StrOutputParser()}
-        | prompt2
-        | llm
-        | StrOutputParser()
-    )
+    # Need Chain1's output as a string, so that it can be passed in chain2
+    chain1 = prompt1 | llm | StrOutputParser()
+    chain2 = prompt2 | llm | StrOutputParser()
+
+    # Call chain1's output as emotion and pass this to chain2
+    chain = {"emotion": chain1
+             } | RunnablePassthrough() | chain2
+
+    # As chain2 also outputs string, we can simply print this output
 
     output = chain.invoke({"text": "What is this chain in langchain?"})
     print(output)
     # Output
     '''
-        Curiosity is an emotion that drives individuals to seek out new knowledge, 
-        experiences, and understanding. It is a natural human instinct that compels us to explore, 
-        investigate, and learn about the world around us. Curiosity is often characterized by 
-        a strong desire to know, discover, and uncover the unknown.
+        Curiosity plays a crucial role in human development and learning. 
+        It drives children to explore their surroundings, ask questions, and experiment with new things. 
+        It also fuels the pursuit of knowledge and innovation in adults, pushing them to seek answers, 
+        discover new ideas, and make breakthroughs in various fields.        
+
     '''

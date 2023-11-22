@@ -84,3 +84,6 @@
   - Data Collection -> Text Processing -> Sentiment Analysis -> Prompt Selector -> Trend Detection -> Language Model -> Trading Decision
 - Method used in the video is different that the code, because at the time of writing, Langchain has introduced a new way of building and dealing with chains called LCEL (LangChain Expression Language).
 - ### [I do it here](openAi/Chains/README.md)
+
+
+<!--  -->
